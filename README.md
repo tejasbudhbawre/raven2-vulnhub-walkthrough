@@ -348,3 +348,23 @@ Exploiting vulnerable PHP mail forms
 Reverse shell handling
 Credential harvesting
 Linux privilege escalation
+## 🧾 Conclusion
+
+The Raven 2 machine demonstrates how multiple low-to-medium severity misconfigurations can be chained together to achieve full system compromise.
+
+Starting from basic reconnaissance, the attack progressed through:
+- Web application enumeration
+- WordPress user discovery
+- Exploitation of a vulnerable PHPMailer implementation
+- Reverse shell access
+- Credential harvesting from configuration files
+- Privilege escalation via MySQL UDF exploitation
+
+This highlights the importance of:
+- Keeping software (like PHP) updated  
+- Securing sensitive directories (e.g., /vendor/, /uploads/)  
+- Proper input validation in web forms  
+- Avoiding credential reuse across services  
+- Restricting database-level privileges  
+
+Overall, the machine provides a realistic demonstration of how attackers think and how small security gaps can lead to complete system compromise.
